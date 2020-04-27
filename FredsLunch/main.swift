@@ -5,6 +5,8 @@
 //  Created by MichaelBurns on 10/22/19.
 //  Copyright © 2019 MichaelBurns. All rights reserved.
 //
+// comment added from newly cloned FredsLunch-swift
+
 
 import SwiftUI
 import CoreData
