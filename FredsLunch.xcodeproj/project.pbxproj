@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C4A5F0A24C3B9D50073512C /* FredsLunchDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A5F0924C3B9D50073512C /* FredsLunchDate.swift */; };
+		4C56746124BF8414007AD195 /* FredsLunchUnitTests.xctest in Sources */ = {isa = PBXBuildFile; fileRef = 4C56746024BF8414007AD195 /* FredsLunchUnitTests.xctest */; };
+		4C56746724BF8787007AD195 /* FredsLunchMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C56746624BF8787007AD195 /* FredsLunchMain.swift */; };
 		4CA314CA235F7AEC00C28DEE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA314C9235F7AEC00C28DEE /* main.swift */; };
 		4CA314D1235F7C3D00C28DEE /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA314D0235F7C3D00C28DEE /* Member.swift */; };
 		4CA314D3235F7CC100C28DEE /* Lunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA314D2235F7CC100C28DEE /* Lunch.swift */; };
@@ -30,6 +33,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4C4A5F0924C3B9D50073512C /* FredsLunchDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FredsLunchDate.swift; sourceTree = "<group>"; };
+		4C56745E24BF8414007AD195 /* FredsLunchUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FredsLunchUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C56746024BF8414007AD195 /* FredsLunchUnitTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = text; path = FredsLunchUnitTests.xctest; sourceTree = "<group>"; };
+		4C56746224BF8414007AD195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C56746624BF8787007AD195 /* FredsLunchMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FredsLunchMain.swift; sourceTree = "<group>"; };
 		4CA314C6235F7AEC00C28DEE /* FredsLunch */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FredsLunch; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CA314C9235F7AEC00C28DEE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		4CA314D0235F7C3D00C28DEE /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
@@ -42,6 +50,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4C56745B24BF8414007AD195 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4CA314C3235F7AEC00C28DEE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -52,10 +67,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C56745F24BF8414007AD195 /* FredsLunchUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				4C56746024BF8414007AD195 /* FredsLunchUnitTests.xctest */,
+				4C56746224BF8414007AD195 /* Info.plist */,
+			);
+			path = FredsLunchUnitTests;
+			sourceTree = "<group>";
+		};
 		4CA314BD235F7AEC00C28DEE = {
 			isa = PBXGroup;
 			children = (
 				4CA314C8235F7AEC00C28DEE /* FredsLunch */,
+				4C56745F24BF8414007AD195 /* FredsLunchUnitTests */,
 				4CA314C7235F7AEC00C28DEE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				4CA314C6235F7AEC00C28DEE /* FredsLunch */,
+				4C56745E24BF8414007AD195 /* FredsLunchUnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				4CA314C9235F7AEC00C28DEE /* main.swift */,
+				4C56746624BF8787007AD195 /* FredsLunchMain.swift */,
 				4CA314D0235F7C3D00C28DEE /* Member.swift */,
 				4CA314D2235F7CC100C28DEE /* Lunch.swift */,
 				4CA314D4235F7D1D00C28DEE /* LunchData.swift */,
@@ -79,6 +106,7 @@
 				4CA314D8235F7DAC00C28DEE /* MemberList.swift */,
 				4CA314DA235F7E3300C28DEE /* Participant.swift */,
 				4CA314DC235F7E7500C28DEE /* CSV.swift */,
+				4C4A5F0924C3B9D50073512C /* FredsLunchDate.swift */,
 			);
 			path = FredsLunch;
 			sourceTree = "<group>";
@@ -86,6 +114,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4C56745D24BF8414007AD195 /* FredsLunchUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C56746524BF8414007AD195 /* Build configuration list for PBXNativeTarget "FredsLunchUnitTests" */;
+			buildPhases = (
+				4C56745A24BF8414007AD195 /* Sources */,
+				4C56745B24BF8414007AD195 /* Frameworks */,
+				4C56745C24BF8414007AD195 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FredsLunchUnitTests;
+			productName = FredsLunchUnitTests;
+			productReference = 4C56745E24BF8414007AD195 /* FredsLunchUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		4CA314C5235F7AEC00C28DEE /* FredsLunch */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4CA314CD235F7AEC00C28DEE /* Build configuration list for PBXNativeTarget "FredsLunch" */;
@@ -110,10 +155,13 @@
 		4CA314BE235F7AEC00C28DEE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1110;
+				LastSwiftUpdateCheck = 1150;
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = MichaelBurns;
 				TargetAttributes = {
+					4C56745D24BF8414007AD195 = {
+						CreatedOnToolsVersion = 11.5;
+					};
 					4CA314C5235F7AEC00C28DEE = {
 						CreatedOnToolsVersion = 11.1;
 					};
@@ -133,9 +181,20 @@
 			projectRoot = "";
 			targets = (
 				4CA314C5235F7AEC00C28DEE /* FredsLunch */,
+				4C56745D24BF8414007AD195 /* FredsLunchUnitTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C56745C24BF8414007AD195 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		4CA314DE235F991100C28DEE /* ShellScript */ = {
@@ -158,6 +217,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4C56745A24BF8414007AD195 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C56746124BF8414007AD195 /* FredsLunchUnitTests.xctest in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4CA314C2235F7AEC00C28DEE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -168,14 +235,50 @@
 				4CA314D3235F7CC100C28DEE /* Lunch.swift in Sources */,
 				4CA314DB235F7E3300C28DEE /* Participant.swift in Sources */,
 				4CA314D5235F7D1D00C28DEE /* LunchData.swift in Sources */,
+				4C56746724BF8787007AD195 /* FredsLunchMain.swift in Sources */,
 				4CA314D1235F7C3D00C28DEE /* Member.swift in Sources */,
 				4CA314D7235F7D6A00C28DEE /* LunchList.swift in Sources */,
+				4C4A5F0A24C3B9D50073512C /* FredsLunchDate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		4C56746324BF8414007AD195 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FredsLunchUnitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MKB.FredsLunchUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4C56746424BF8414007AD195 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FredsLunchUnitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MKB.FredsLunchUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		4CA314CB235F7AEC00C28DEE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -312,6 +415,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4C56746524BF8414007AD195 /* Build configuration list for PBXNativeTarget "FredsLunchUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C56746324BF8414007AD195 /* Debug */,
+				4C56746424BF8414007AD195 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4CA314C1235F7AEC00C28DEE /* Build configuration list for PBXProject "FredsLunch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

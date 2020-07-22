@@ -12,22 +12,34 @@ class Lunch
 {
     
     var balance = 0.0
-    var date = Date()
+    var date : Date?
     var eaterBalance = 0.0
     var id: String?
     var lunchDescription: String?
     var payerName: String?
     var recordedBalance: Double?
     var participants: [Participant] = []
+    var lunchData: LunchData
  //   var lunchList: LunchList?
-    
-    init(date: Date)
+  
+    init( lunchData : LunchData )
     {
-        self.date = date
+        self.lunchData = lunchData
+    }
+    
+    init( lunchData : LunchData, date: Date)
+    {
         
+        self.lunchData = lunchData
+        self.date = date
     }
     
     
+      func setLunchData( lunchData: LunchData )
+      {
+          self.lunchData = lunchData
+      }
+      
     // register a member to have participated in the new lunch
     func addParticipant( member: Member,  amountEaten: Double, amountPaid: Double )
     {
@@ -67,7 +79,7 @@ class Lunch
     
     func dump()
     {
-      print( " date=\(self.date) payer=\(self.payerName) balance=\(self.balance) eaterBalance=\(self.eaterBalance) \n participants:")
+        print( " date=\(String(describing: self.date)) payer=\(String(describing: self.payerName)) balance=\(self.balance) eaterBalance=\(self.eaterBalance) \n participants:")
         for participant in self.participants
         {
             print("  id=\(participant.id) eaten=\(participant.amountEaten) payed=\(participant.amountPaid) ")

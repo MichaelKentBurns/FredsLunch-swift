@@ -30,7 +30,7 @@ class Participant
         self.member = member
         id = member.name!
         self.lunch = lunch
-        self.when = lunch.date
+        self.when = lunch.date!
         
         lunch.eaterBalance += amountEaten
         

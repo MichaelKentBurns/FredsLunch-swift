@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>gitFredsLunch-swift</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>ch.hsr.ifs.tifig.core.swiftpackagemanagerbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>ch.hsr.ifs.tifig.core.swiftnature</nature>
+	</natures>
+</projectDescription>

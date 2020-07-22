@@ -14,6 +14,7 @@ class LunchList
     
     var lunches = [Lunch]()
     var context : LunchData?
+    var lunchData : LunchData?
     
     init( _ : LunchData )
     {
