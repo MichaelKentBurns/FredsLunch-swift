@@ -10,7 +10,7 @@ import Foundation
 
 class FredsLunchDate: NSObject
 {
-    
+    let debug = false
     let dmyFormatter = DateFormatter()
     
     let ymdhmsFormatter = DateFormatter()
@@ -18,7 +18,7 @@ class FredsLunchDate: NSObject
     
     func setup()
     {
-        print("FredsLunchDate.setup() starting ")
+        if debug { print("FredsLunchDate.setup() starting ") }
 
         if !isSetup
         {
@@ -31,7 +31,7 @@ class FredsLunchDate: NSObject
             test()
         }
         
-        print("FredsLunchDate.setup() finished. ")
+        if debug {print("FredsLunchDate.setup() finished. ")}
 
         
     }
@@ -39,7 +39,7 @@ class FredsLunchDate: NSObject
     
     func test()
     {
-        print("FredsLunchDate.test() starting ")
+        if debug { print("FredsLunchDate.test() starting ") }
         //########## private date related
         // Specify date components
         var dateComponents = DateComponents()
@@ -60,7 +60,7 @@ class FredsLunchDate: NSObject
         formatter.locale = Locale(identifier: "en_US_POSIX")
         formatter.dateFormat = "dd-MMM-yyyy"
         let dateText = formatter.string(from: today)
-        print(" today is \(today) or \(dateText)")
+        if debug { print(" today is \(today) or \(dateText)")}
 
         dateComponents = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second], from: Date())
         //dateComponents.year
@@ -77,7 +77,7 @@ class FredsLunchDate: NSObject
 
         formatter.timeStyle = .none
         let hoyDia = formatter.date(from: dateText)
-        print( "recreated date value=\(String(describing: hoyDia))")
+        if debug { print( "recreated date value=\(String(describing: hoyDia))") }
 
         let RFC3339DateFormatter = DateFormatter()
         RFC3339DateFormatter.locale = Locale(identifier: "en_US_POSIX")
@@ -87,9 +87,9 @@ class FredsLunchDate: NSObject
         /* 39 minutes and 57 seconds after the 16th hour of December 19th, 1996 with an offset of -08:00 from UTC (Pacific Standard Time) */
         let string = "1996-12-19T16:39:57-08:00"
         var aWhileAgo = RFC3339DateFormatter.date(from: string)
-        print( "date from string \(string) yields date \(aWhileAgo)" )
+        if debug { print( "date from string \(string) yields date \(aWhileAgo)" ) }
 
-        print("FredsLunchDate.test() finished. ")
+        if debug { print("FredsLunchDate.test() finished. ") }
 
     }
     

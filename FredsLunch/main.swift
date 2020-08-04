@@ -15,10 +15,10 @@ import CoreData
 var debug = true
 // setup the hub of the data model and the list for group members
 var lunchMain = FredsLunchMain(name: "main")
-    lunchMain.debug = debug
+   // lunchMain.debug = debug
     for arg in CommandLine.arguments
     {
         print(arg)
     }
     lunchMain.arguments = CommandLine.arguments
-   // lunchMain.run()
+    lunchMain.run()

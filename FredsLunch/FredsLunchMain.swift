@@ -35,14 +35,16 @@ class FredsLunchMain: NSObject
     {
 
         self.name = name
-        print("Hello, Freds are having lunch!")
+        if debug { print("Hello, Freds are having lunch!") }
         
         numArgs = arguments.count
         
         // for debugging, test parameters
         if numArgs <= 1
         {
-            arguments = [ "pgm", "-d", "-f", "/Users/Shared/Xcode/fredsLunch shell/Chili's 2019.csv" ]
+            arguments = [ "pgm",
+                            // "-d",
+                            "-f", "/Users/Shared/Xcode/fredsLunch shell/Chili's 2019.csv" ]
             numArgs = arguments.count
         }
         
@@ -100,17 +102,6 @@ class FredsLunchMain: NSObject
             }
         }  // for all args
         
-        // setup the hub of the data model and the list for group members
-        let lunchData = LunchData()
-            lunchData.debug = debug
-        
-        if debug
-        {    print ( "lunchData == \(String(describing: lunchData))" ) }
-        
-        if url != nil   // we have a url for a csv file
-        {
-            lunchData.setUrl(newUrl: url! as NSURL)
-        }
     }
     
     func setArguments( argv : [String])
@@ -124,13 +115,26 @@ class FredsLunchMain: NSObject
         return arguments
     }
     
-//    func run()
-//    {
-//      if debug { print("DEBUG: FredsLunchMain.run  starting. ")}
-//
-//
-//      if debug { print("DEBUG: FredsLunchMain.run  finished. ")}
-//    }
+    func run()
+    {
+      if debug { print("DEBUG: FredsLunchMain.run  starting. ")}
+        
+        // setup the hub of the data model and the list for group members
+        let lunchData = LunchData()
+            lunchData.debug = debug
+        if debug
+        {    print ( "lunchData == \(String(describing: lunchData))" ) }
+        
+        if url != nil   // we have a url for a csv file
+        {
+            lunchData.setUrl(newUrl: url! as NSURL)
+        }
+
+        
+        lunchData.gatherData()
+        
+      if debug { print("DEBUG: FredsLunchMain.run  finished. ")}
+    }
     
     
 }

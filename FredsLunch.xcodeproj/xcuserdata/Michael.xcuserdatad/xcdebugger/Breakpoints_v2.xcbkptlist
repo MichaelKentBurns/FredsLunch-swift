@@ -23,16 +23,112 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "4F764E25-5B9D-4F35-8823-6C04E022E6BF"
-            shouldBeEnabled = "Yes"
+            uuid = "792C22F1-2E21-4E55-BF4E-20250A02D67E"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FredsLunch/LunchData.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "232"
-            endingLineNumber = "232"
-            landmarkName = "setUrl(newUrl:)"
+            startingLineNumber = "206"
+            endingLineNumber = "206"
+            landmarkName = "checkBalances()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4DC640B4-A4B3-42CB-BED8-BE700B79BAC0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FredsLunch/FredsLunchMain.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "init(name:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "47C661A2-4992-48CA-926E-DAD2043991E3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FredsLunch/LunchData.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "228"
+            endingLineNumber = "228"
+            landmarkName = "printRow(rowNumber:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FF201704-6E5A-46C1-A331-90D9F367B26A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FredsLunch/LunchData.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "242"
+            endingLineNumber = "242"
+            landmarkName = "printRow(rowNumber:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FF201704-6E5A-46C1-A331-90D9F367B26A - fdb6d495a2a78ea3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FredsLunch.LunchData.printRow(rowNumber: Swift.Int) -&gt; ()"
+                  moduleName = "FredsLunch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Michael/Development/gitRepos/FredsLunch-swift/FredsLunch/LunchData.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "244"
+                  endingLineNumber = "244"
+                  offsetFromSymbolStart = "2787">
+               </Location>
+               <Location
+                  uuid = "FF201704-6E5A-46C1-A331-90D9F367B26A - fdb6d495a2a78ea3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FredsLunch.LunchData.printRow(rowNumber: Swift.Int) -&gt; ()"
+                  moduleName = "FredsLunch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Michael/Development/gitRepos/FredsLunch-swift/FredsLunch/LunchData.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "244"
+                  endingLineNumber = "244"
+                  offsetFromSymbolStart = "2845">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BC78F93B-0E44-43AC-8967-926DD24B4C89"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FredsLunch/CSV.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "init(urlArg:debug:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

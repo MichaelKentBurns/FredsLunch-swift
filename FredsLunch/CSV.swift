@@ -17,7 +17,7 @@ class CSV
     var hasData : Bool = false
     let lineSeparator = "\r\n"
     let columnSeparator = ","
-    let possibleLineSeparators = ["\r\n","\r","\n"]
+    // let possibleLineSeparators = ["\r\n","\r","\n"]
     var lines : [String]? = nil
     var debug : Bool = false
     var endingBalanceRowNumber = 0
@@ -44,7 +44,7 @@ class CSV
             csvString = try String(contentsOf: url!)
         } catch
         {
-            print("An error occurred reading. url=(url) error: \(error.localizedDescription) ")
+            print("ERROR: An error occurred reading. url=(url) error: \(error.localizedDescription) ")
         }
         
         if debug && csvString != nil
@@ -64,13 +64,12 @@ class CSV
                 
                 // if there were any values, go through them
                 if headers.count > 0
-                {
+                {   if debug { print("\nColumn Headers:") }
                     var columnIndex = 0
                     for value in headers
                     {
                         if debug
                         {
-                            print("\nColumn Headers:")
                             print("column #\(columnIndex) is titled \(value)")
                         }
                         
@@ -163,7 +162,10 @@ class CSV
                         
                         // stow the value in the row as appropriate type
                         rowValues[columnName] = value
-                        print("row[\(rowIndex)] lineNumber=\(lineNumber) column=\(columnIndex) value=\(String(describing: value))")
+                        if debug
+                        {
+                           print("row[\(rowIndex)] lineNumber=\(lineNumber) column=\(columnIndex) value=\(String(describing: value))")
+                        }
                         
                     }
                     
